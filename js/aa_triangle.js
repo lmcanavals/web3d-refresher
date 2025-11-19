@@ -54,15 +54,9 @@ async function createProgram(gl, shaders) {
 	]);
 	const aPosition = gl.getAttribLocation(program, "a_position");
 	const vertices = new Float32Array([
-		0.0,
-		0.5,
-		0.,
-		-0.5,
-		-0.5,
-		0.,
-		0.5,
-		-0.5,
-		0.,
+		0.0, 0.5, 0.,
+		-0.5, -0.5, 0.,
+		0.5, -0.5, 0.,
 	]);
 	const vertexBuffer = gl.createBuffer();
 	gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
